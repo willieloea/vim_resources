@@ -1,0 +1,93 @@
+Vim guide by Willie Loftie-Eaton
+
+Index:
+  1. HOW TO USE THE GUIDE  ...   9
+  2. WHY VIM?              ...  13
+  3. VIM THEORY            ...  19
+  4. USEFUL STUFF          ...  36
+
+  1. HOW TO USE THE GUIDE
+Cut out section 4 and only use that after reading section 2 and 3.
+
+
+  2. WHY VIM?
+I know it doesn't seem like fun to use this, but if you use Vim correctly you
+will almost never have to lift your hands form your keyboard while programming.
+This will make you a faster programmer and is very satisfying.
+
+  
+  3. VIM THEORY
+Vim has 4 modes:
+ 1. Normal mode (default)
+ 2. Insert mode (used for editing)
+ 3. Command mode (allows commands to be executed)
+ 4. Visual mode (also used for editing)
+
+How to switch between the different modes:
+       | Normal mode | [esc]
+      /i     |:       \v
+insert    command      visual
+
+You can customize vim by editing your .vimrc file (in your home directory).
+See this for a useful guide on customization:
+https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/
+
+
+  4. USEFUL STUFF
+IN NORMAL MODE:
+  Close with 
+    ':q' = unmodified file
+    ':q!' = throw away changes
+    ':wq' = write changes and quit
+    (these are technically in command mode)
+  'h', 'j', 'k', 'l' = navigation
+  'gg' = goto document start
+  'G' = goto document end
+  'Shift' + 'h' = move cursor high on screen
+  'Shift' + 'm' = move cursor middle on screen
+  'Shift' + 'l' = move cursor low on screen
+  'Ctrl' + 'u' = up half a screen
+  'Ctrl' + 'd' = down half a screen
+  'x' = delete character
+  'r<char>' = replace cursor character with <char>
+  'yy' = copy entire line
+  'dd' = cut entire line
+  'p' = paste
+  'Ctrl' + 'Shift' + 'v' = paste from system clipboard
+  'u' = undo
+  'Ctrl' + 'r' = redo
+  'i' = enter insert mode
+  'I' = enter insert mode at the beginning of the line
+  'a' = enter insert mode to the right of the cursor
+  'A' = enter insert mode at the end of the line
+  'o' = enter insert mode in new next line
+  'Ctrl' + 'w' + 'v' = split vertically
+  'Ctrl' + 'w' + 'l' = move to right window
+  'Ctrl' + 'w' + 'h' = move to left window
+  'Ctrl' + 'w' + 's' = split horizontally
+  'Ctrl' + 'w' + 'j' = move to bottom window
+  'Ctrl' + 'w' + 'k' = move to top window
+  'Ctrl' + 'w' + '<' = increase window width
+  'Ctrl' + 'w' + '>' = decrease window width
+  'Ctrl' + 'w' + '+' = increase window height
+  'Ctrl' + 'w' + '-' = decrease window height
+  'Ctrl' + 'w' + '=' = reset window size
+
+IN INSERT MODE:
+  'Ctrl' + 'w' = delete word
+  'Ctrl' + 'h' = delete character
+  'Ctrl' + 'u' = delete everything left of cursor
+  'Ctrl' + 'n'/'p' = autocomplete
+  'Ctrl' + 'o' = allows normal mode command to follow, while in insert mode
+  'Ctrl' + 'Shift' + 'v' = paste
+
+IN COMMAND MODE
+  'open <FILE_PATH>' = opens file at <FILE_PATH>
+  'set number' = numbers lines
+  '<number>' = navigates to line <number>
+
+IN VISUAL MODE
+  <arrow keys> = move cursor and select
+  'y' = yank = copy
+  'p' = paste
+  'd' = cut
